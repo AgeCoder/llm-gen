@@ -42,42 +42,49 @@ llm-gen --src ./out
 ```
 
 This processes all HTML files (`*.html`, `*.htm`) in the `./out` directory, generating:
+
 - `llm.txt`: Extracted text with a table of contents.
 - `pages.json`: Metadata about processed files.
 
 ### Options
 
-| Option          | Description                                                                 | Type    | Default            |
-|-----------------|-----------------------------------------------------------------------------|---------|--------------------|
-| `--src`         | Source directory containing HTML files to process (required).               | String  | None               |
-| `--public`      | Output directory for generated files (`llm.txt`, `pages.json`, `llm_ui.html`). | String  | `.` (current dir)  |
-| `--out`         | Output filename for the extracted text (relative to `--public`).            | String  | `llm.txt`          |
-| `--ui`          | Generate an interactive HTML UI file (`llm_ui.html`).                       | Boolean | `false`            |
-| `--concurrency` | Maximum number of files to process concurrently.                            | Number  | `10`               |
-| `--verbose`     | Enable detailed logging of processing steps.                                | Boolean | `false`            |
-| `--pattern`     | Glob pattern to match HTML files (relative to `--src`).                     | String  | `**/*.htm?(l)`     |
-| `--help`        | Display help information.                                                  | -       | -                  |
+| Option          | Description                                                                    | Type    | Default           |
+| --------------- | ------------------------------------------------------------------------------ | ------- | ----------------- |
+| `--src`         | Source directory containing HTML files to process (required).                  | String  | None              |
+| `--public`      | Output directory for generated files (`llm.txt`, `pages.json`, `llm_ui.html`). | String  | `.` (current dir) |
+| `--out`         | Output filename for the extracted text (relative to `--public`).               | String  | `llm.txt`         |
+| `--ui`          | Generate an interactive HTML UI file (`llm_ui.html`).                          | Boolean | `false`           |
+| `--concurrency` | Maximum number of files to process concurrently.                               | Number  | `10`              |
+| `--verbose`     | Enable detailed logging of processing steps.                                   | Boolean | `false`           |
+| `--pattern`     | Glob pattern to match HTML files (relative to `--src`).                        | String  | `**/*.htm?(l)`    |
+| `--help`        | Display help information.                                                      | -       | -                 |
 
 ### Example Commands
 
 1. **Process HTML files in a Next.js `out` directory**:
+
    ```bash
    llm-gen --src ./out --public ./dist --out extracted.txt
    ```
+
    - Processes HTML files in `./out`.
    - Writes `extracted.txt` and `pages.json` to `./dist`.
 
 2. **Generate an interactive UI**:
+
    ```bash
    llm-gen --src ./out --ui --verbose
    ```
+
    - Generates `llm.txt`, `pages.json`, and `llm_ui.html` in the current directory.
    - Logs detailed progress.
 
 3. **Custom glob pattern with high concurrency**:
+
    ```bash
    llm-gen --src ./out --pattern "**/*.html" --concurrency 20 --public ./output
    ```
+
    - Processes only `*.html` files with up to 20 concurrent tasks.
    - Outputs to `./output`.
 
@@ -87,6 +94,7 @@ This processes all HTML files (`*.html`, `*.htm`) in the `./out` directory, gene
   - Contains extracted text from all HTML files, organized with headers for each file.
   - Includes a table of contents with file paths, sizes, and character counts.
   - Example structure:
+
     ```
     Generated: 2025-08-10T12:34:56.789Z
     Source directory: /path/to/out
@@ -185,7 +193,7 @@ This project is licensed under the [MIT License](LICENSE).
 ## Author
 
 - **Vedant Navale**
-- Email: vedantnavaleone@gmail.com
+- Email: vedantnavale45@gmail.com
 - GitHub: [Agecoder](https://github.com/Agecoder)
 
 ## Issues

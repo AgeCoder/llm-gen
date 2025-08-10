@@ -1,6 +1,6 @@
 {
   "name": "llm-gen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A CLI tool to extract text from a static Next.js export and generate llm.txt for LLM ingestion.",
   "main": "index.js",
   "bin": {

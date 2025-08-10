@@ -21,19 +21,48 @@
     "content-extraction",
     "html-to-text",
     "ai",
-    "nlp"
+    "nlp",
+    "text-processing",
+    "data-extraction",
+    "file-parser",
+    "markdown",
+    "text-cleaning",
+    "knowledge-base",
+    "search-indexing",
+    "openai",
+    "document-processing",
+    "web-scraping",
+    "automation",
+    "developer-tools",
+    "command-line-tool",
+    "javascript",
+    "nodejs",
+    "text-generation",
+    "text-analysis",
+    "text-mining",
+    "text-analytics",
+    "text-summarization",
+    "text-extraction",
+    "text-processing-tool",
+    "text-formatter",
+    "text-cleaner",
+    "text-processor",
+    "AgeCoder",
+    "vedantnavale",
+    "vedantnavale45",
+    "Aligthage"
   ],
   "author": {
-    "name": "Vedant Navale",
-    "email": "vedantnavaleone@gmail.com",
+    "name": "Vedant Navale (AgeCoder)",
+    "email": "vedantnavale45@gmail.com",
     "url": "https://github.com/Agecoder"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Agecoder/llm-gen.git"
+    "url": "https://github.com/AgeCoder/llm-gen.git"
   },
   "bugs": {
-    "url": "https://github.com/Agecoder/llm-gen/issues"
+    "url": "https://github.com/AgeCoder/llm-gen/issues"
   },
   "homepage": "https://github.com/Agecoder/llm-gen#readme",
   "license": "MIT",

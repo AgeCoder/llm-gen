@@ -1,0 +1,52 @@
+{
+  "name": "llm-gen",
+  "version": "1.0.1",
+  "description": "A CLI tool to extract text from a static Next.js export and generate llm.txt for LLM ingestion.",
+  "main": "index.js",
+  "bin": {
+    "llm-gen": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "node index.js ./out",
+    "dev": "node --watch index.js ./out",
+    "lint": "eslint . --ext .js,.mjs",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "llm",
+    "cli",
+    "nextjs",
+    "static-site",
+    "content-extraction",
+    "html-to-text",
+    "ai",
+    "nlp"
+  ],
+  "author": {
+    "name": "Vedant Navale",
+    "email": "vedantnavaleone@gmail.com",
+    "url": "https://github.com/Agecoder"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Agecoder/llm-gen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Agecoder/llm-gen/issues"
+  },
+  "homepage": "https://github.com/Agecoder/llm-gen#readme",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "cheerio": "^1.1.0",
+    "fs-extra": "^11.3.1",
+    "glob": "^11.0.3",
+    "p-limit": "^6.2.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^9.12.0",
+    "prettier": "^3.3.3"
+  }
+}
